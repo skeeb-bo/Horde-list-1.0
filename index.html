@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Horde Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Supabase -->
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+
+    <div>
+        <h1>Horde Planner</h1>
+        <div id="userInfo"></div>
+    </div>
+
+    <div class="top-actions">
+
+        <button id="loginButton">
+            Login with Discord
+        </button>
+
+        <button
+            id="logoutButton"
+            style="display:none;"
+        >
+            Logout
+        </button>
+
+    </div>
+
+</header>
+
+
+<div id="loginMessage" class="login-message">
+    Login with Discord to use the planner.
+</div>
+
+
+<main>
+
+    <section class="planner">
+
+        <button id="claimButton" class="claim-button">
+            Start claim run · 1 to go
+        </button>
+
+
+        <div class="search-area">
+
+            <label for="search">
+                Search
+            </label>
+
+            <input
+                id="search"
+                type="text"
+                placeholder="UID or name"
+            >
+
+        </div>
+
+
+        <div class="filters">
+
+            <button
+                class="filter active"
+                data-filter="all"
+            >
+                All
+            </button>
+
+            <button
+                class="filter"
+                data-filter="liked"
+            >
+                Has likes
+            </button>
+
+            <button
+                class="filter"
+                data-filter="noted"
+            >
+                Not noted
+            </button>
+
+        </div>
+
+
+        <div class="status-bar">
+
+            <span>
+                Last copied
+                <b id="lastCopied">—</b>
+            </span>
+
+            <span>
+                Newly added
+                <b id="newlyAdded">—</b>
+            </span>
+
+        </div>
+
+
+        <section>
+
+            <h2>Not logged in yet</h2>
+
+            <div id="newCards"></div>
+
+        </section>
+
+
+        <section>
+
+            <h2>Full</h2>
+
+            <div
+                id="hordeCards"
+                class="card-grid"
+            >
+                Loading...
+            </div>
+
+        </section>
+
+    </section>
+
+
+    <aside class="activity">
+
+        <h2>Activity</h2>
+
+        <div id="activityList">
+            Loading...
+        </div>
+
+    </aside>
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
