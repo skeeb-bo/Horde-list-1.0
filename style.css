@@ -1,0 +1,1492 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f5f6f8;
+
+    color: #333;
+}
+
+
+/* =========================
+   TOP BAR
+========================= */
+
+.topbar {
+
+    background: white;
+
+    border-bottom:
+        1px solid #ddd;
+
+    padding:
+        12px 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.topbar h1 {
+
+    margin: 0;
+
+    font-size: 20px;
+}
+
+#userInfo {
+
+    color: #777;
+
+    font-size: 13px;
+
+    margin-top: 4px;
+}
+
+.top-actions {
+
+    display: flex;
+
+    gap: 8px;
+}
+
+.top-actions button {
+
+    padding:
+        9px 14px;
+
+    border:
+        1px solid #ccc;
+
+    background: white;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+#loginButton {
+
+    background: #5865f2;
+
+    color: white;
+
+    border-color: #5865f2;
+}
+
+
+/* =========================
+   LOGIN MESSAGE
+========================= */
+
+.login-message {
+
+    background: #fff4d6;
+
+    border-bottom:
+        1px solid #e5d49a;
+
+    padding: 10px 20px;
+
+    text-align: center;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   MAIN
+========================= */
+
+main {
+
+    display: flex;
+
+    margin: 0 auto;
+
+    max-width: 1400px;
+}
+
+
+/* =========================
+   PLANNER
+========================= */
+
+.planner {
+
+    flex: 1;
+
+    padding: 20px;
+
+    min-width: 0;
+}
+
+
+/* =========================
+   CLAIM
+========================= */
+
+.claim-button {
+
+    width: 100%;
+
+    padding: 13px;
+
+    border: none;
+
+    border-radius: 5px;
+
+    background: #f2b400;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    margin-bottom: 20px;
+}
+
+.claim-button:hover {
+
+    background: #dda500;
+}
+
+
+/* =========================
+   SEARCH
+========================= */
+
+.search-area {
+
+    margin-bottom: 15px;
+}
+
+.search-area label {
+
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+#search {
+
+    width: 100%;
+
+    padding: 11px;
+
+    border:
+        1px solid #ccc;
+
+    border-radius: 6px;
+
+    outline: none;
+}
+
+#search:focus {
+
+    border-color: #5865f2;
+}
+
+
+/* =========================
+   FILTERS
+========================= */
+
+.filters {
+
+    display: flex;
+
+    background: white;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 6px;
+
+    overflow: hidden;
+
+    margin-bottom: 15px;
+}
+
+.filter {
+
+    flex: 1;
+
+    padding: 11px;
+
+    border: none;
+
+    background: white;
+
+    cursor: pointer;
+}
+
+.filter:hover {
+
+    background: #f0f0f0;
+}
+
+.filter.active {
+
+    background: #eee;
+    font-weight: bold;
+}
+
+
+/* =========================
+   STATUS
+========================= */
+
+.status-bar {
+
+    display: flex;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+
+    flex-wrap: wrap;
+}
+
+.status-bar span {
+
+    background: #e6f4ef;
+
+    border-radius: 20px;
+
+    padding:
+        7px 12px;
+
+    font-size: 12px;
+}
+
+
+/* =========================
+   HEADINGS
+========================= */
+
+h2 {
+
+    font-size: 15px;
+
+    margin-top: 20px;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.card-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 10px;
+}
+
+.horde-card {
+
+    background: white;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 9px;
+
+    padding: 12px;
+
+    transition:
+        0.15s;
+}
+
+.horde-card:hover {
+
+    box-shadow:
+        0 2px 8px
+        rgba(0,0,0,0.08);
+}
+
+
+.card-top {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 8px;
+
+    margin-bottom: 12px;
+}
+
+
+.uid {
+
+    background: #eee;
+
+    padding:
+        4px 7px;
+
+    border-radius: 4px;
+
+    font-weight: bold;
+
+    font-size: 13px;
+}
+
+
+.status {
+
+    color: #d44;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.card-actions {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 5px;
+}
+
+
+.like-button {
+
+    background: white;
+
+    border:
+        1px solid #ddd;
+
+    border-radius: 5px;
+
+    padding:
+        6px 9px;
+
+    cursor: pointer;
+}
+
+.like-button.liked {
+
+    color: #e53935;
+}
+
+
+.full-button {
+
+    background: #fff7e0;
+
+    border:
+        1px solid #e3b532;
+
+    border-radius: 5px;
+
+    padding:
+        6px 10px;
+
+    cursor: pointer;
+}
+
+
+.not-full-button {
+
+    background: #e9f8ef;
+
+    border:
+        1px solid #64b984;
+
+    color: #237443;
+
+    border-radius: 5px;
+
+    padding:
+        6px 10px;
+
+    cursor: pointer;
+}
+
+
+/* =========================
+   NEW CARD
+========================= */
+
+.new-card {
+
+    background: #fffaf0;
+
+    border:
+        1px solid #ead9aa;
+
+    padding: 15px;
+
+    border-radius: 9px;
+
+    margin-bottom: 20px;
+}
+
+
+/* =========================
+   ACTIVITY
+========================= */
+
+.activity {
+
+    width: 280px;
+
+    background: white;
+
+    border-left:
+        1px solid #ddd;
+
+    padding: 15px;
+
+    min-height: calc(100vh - 60px);
+
+    overflow-y: auto;
+}
+
+.activity h2 {
+
+    margin-top: 0;
+}
+
+
+.activity-item {
+
+    padding:
+        11px 5px;
+
+    border-bottom:
+        1px solid #eee;
+
+    font-size: 13px;
+
+    line-height: 1.4;
+}
+
+
+.activity-time {
+
+    display: block;
+
+    color: #999;
+
+    font-size: 11px;
+
+    margin-top: 3px;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+
+    main {
+
+        display: block;
+    }
+
+    .activity {
+
+        width: 100%;
+
+        min-height: auto;
+
+        border-left: none;
+
+        border-top:
+            1px solid #ddd;
+    }
+
+    .card-grid {
+
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .card-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    .topbar {
+
+        align-items: flex-start;
+
+        gap: 10px;
+    }
+
+    .top-actions {
+
+        flex-direction: column;
+    }
+}
+5. Replace script.js
+This is the important part.
+
+Delete your old JavaScript and paste:
+
+// ======================================================
+// SUPABASE CONFIGURATION
+// ======================================================
+
+// Get these from:
+// Supabase → Connect
+
+const SUPABASE_URL =
+    "YOUR_SUPABASE_PROJECT_URL";
+
+const SUPABASE_KEY =
+    "YOUR_SUPABASE_PUBLISHABLE_KEY";
+
+
+const supabaseClient =
+    window.supabase.createClient(
+        SUPABASE_URL,
+        SUPABASE_KEY
+    );
+
+
+// ======================================================
+// VARIABLES
+// ======================================================
+
+let currentUser = null;
+
+let allHordes = [];
+
+let currentFilter = "all";
+
+
+// ======================================================
+// DOM
+// ======================================================
+
+const loginButton =
+    document.getElementById("loginButton");
+
+const logoutButton =
+    document.getElementById("logoutButton");
+
+const userInfo =
+    document.getElementById("userInfo");
+
+const loginMessage =
+    document.getElementById("loginMessage");
+
+const hordeCards =
+    document.getElementById("hordeCards");
+
+const activityList =
+    document.getElementById("activityList");
+
+const searchInput =
+    document.getElementById("search");
+
+
+// ======================================================
+// START
+// ======================================================
+
+document.addEventListener(
+    "DOMContentLoaded",
+    initialize
+);
+
+
+async function initialize() {
+
+    const {
+        data: {
+            session
+        }
+    } = await supabaseClient
+        .auth
+        .getSession();
+
+
+    if (session) {
+
+        await handleLogin(
+            session.user
+        );
+
+    } else {
+
+        updateLoggedOutUI();
+
+    }
+
+
+    // Listen for login/logout
+
+    supabaseClient
+        .auth
+        .onAuthStateChange(
+            async (event, session) => {
+
+                if (session) {
+
+                    await handleLogin(
+                        session.user
+                    );
+
+                } else {
+
+                    currentUser = null;
+
+                    updateLoggedOutUI();
+
+                }
+
+            }
+        );
+}
+
+
+// ======================================================
+// DISCORD LOGIN
+// ======================================================
+
+loginButton.addEventListener(
+    "click",
+    async () => {
+
+        const {
+            error
+        } = await supabaseClient
+            .auth
+            .signInWithOAuth({
+
+                provider: "discord",
+
+                options: {
+
+                    redirectTo:
+                        window.location.href
+
+                }
+
+            });
+
+
+        if (error) {
+
+            console.error(error);
+
+            alert(
+                "Discord login failed: "
+                + error.message
+            );
+
+        }
+
+    }
+);
+
+
+// ======================================================
+// LOGOUT
+// ======================================================
+
+logoutButton.addEventListener(
+    "click",
+    async () => {
+
+        await supabaseClient
+            .auth
+            .signOut();
+
+    }
+);
+
+
+// ======================================================
+// HANDLE LOGIN
+// ======================================================
+
+async function handleLogin(user) {
+
+    currentUser = user;
+
+
+    const metadata =
+        user.user_metadata || {};
+
+
+    const username =
+        metadata.preferred_username ||
+        metadata.full_name ||
+        metadata.name ||
+        user.email ||
+        "User";
+
+
+    userInfo.innerText =
+        `Logged in as ${username}`;
+
+
+    loginButton.style.display =
+        "none";
+
+    logoutButton.style.display =
+        "block";
+
+    loginMessage.style.display =
+        "none";
+
+
+    // Create/update profile
+
+    await supabaseClient
+        .from("profiles")
+        .upsert({
+
+            id: user.id,
+
+            username: username,
+
+            avatar_url:
+                metadata.avatar_url || null
+
+        });
+
+
+    await loadHordes();
+
+    await loadActivity();
+
+    subscribeToRealtime();
+
+}
+
+
+// ======================================================
+// LOGGED OUT
+// ======================================================
+
+function updateLoggedOutUI() {
+
+    userInfo.innerText =
+        "Not logged in";
+
+    loginButton.style.display =
+        "block";
+
+    logoutButton.style.display =
+        "none";
+
+    loginMessage.style.display =
+        "block";
+
+    hordeCards.innerHTML = `
+        <p>
+            Login with Discord to use the planner.
+        </p>
+    `;
+
+    activityList.innerHTML = `
+        <p>
+            Login to see activity.
+        </p>
+    `;
+}
+
+
+// ======================================================
+// LOAD HORDE DATA
+// ======================================================
+
+async function loadHordes() {
+
+    const {
+        data,
+        error
+    } = await supabaseClient
+        .from("hordes")
+        .select("*")
+        .order(
+            "updated_at",
+            {
+                ascending: false
+            }
+        );
+
+
+    if (error) {
+
+        console.error(error);
+
+        hordeCards.innerText =
+            "Could not load hordes.";
+
+        return;
+
+    }
+
+
+    allHordes = data || [];
+
+    renderHordes();
+
+}
+
+
+// ======================================================
+// RENDER HORDE CARDS
+// ======================================================
+
+async function renderHordes() {
+
+    let hordes =
+        [...allHordes];
+
+
+    const search =
+        searchInput
+            .value
+            .toLowerCase()
+            .trim();
+
+
+    // Search
+
+    if (search) {
+
+        hordes =
+            hordes.filter(horde =>
+
+                horde.uid
+                    .toLowerCase()
+                    .includes(search)
+
+            );
+
+    }
+
+
+    // Filter
+
+    if (currentFilter === "liked") {
+
+        const likedIds =
+            await getMyLikes();
+
+
+        hordes =
+            hordes.filter(horde =>
+                likedIds.includes(horde.id)
+            );
+
+    }
+
+
+    if (currentFilter === "noted") {
+
+        hordes =
+            hordes.filter(horde =>
+                horde.status === "not_full"
+            );
+
+    }
+
+
+    if (hordes.length === 0) {
+
+        hordeCards.innerHTML =
+            "<p>No matching hordes.</p>";
+
+        return;
+
+    }
+
+
+    // Get like counts
+
+    const {
+        data: likes
+    } = await supabaseClient
+        .from("likes")
+        .select("horde_id, user_id");
+
+
+    const likeData =
+        likes || [];
+
+
+    hordeCards.innerHTML =
+        hordes.map(horde => {
+
+            const count =
+                likeData.filter(
+                    like =>
+                        like.horde_id === horde.id
+                ).length;
+
+
+            const liked =
+                likeData.some(
+                    like =>
+                        like.horde_id === horde.id &&
+                        like.user_id === currentUser.id
+                );
+
+
+            const statusText =
+                horde.status === "full"
+                    ? "Full"
+                    : "Not full";
+
+
+            return `
+
+                <div
+                    class="horde-card"
+                    data-id="${horde.id}"
+                >
+
+                    <div class="card-top">
+
+                        <span class="uid">
+                            ${escapeHTML(horde.uid)}
+                        </span>
+
+                        <span class="status">
+                            ${statusText}
+                        </span>
+
+                    </div>
+
+
+                    <div class="card-actions">
+
+                        <button
+                            class="like-button
+                            ${liked ? "liked" : ""}"
+                            onclick="toggleLike(${horde.id})"
+                        >
+                            ${liked ? "♥" : "♡"}
+                            ${count}
+                        </button>
+
+
+                        ${
+                            horde.status === "full"
+
+                            ? `
+
+                                <button
+                                    class="full-button"
+                                    onclick="setStatus(
+                                        ${horde.id},
+                                        'not_full'
+                                    )"
+                                >
+                                    Not full
+                                </button>
+
+                            `
+
+                            : `
+
+                                <button
+                                    class="not-full-button"
+                                    onclick="setStatus(
+                                        ${horde.id},
+                                        'full'
+                                    )"
+                                >
+                                    Full
+                                </button>
+
+                            `
+                        }
+
+                    </div>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+}
+
+
+// ======================================================
+// SET FULL / NOT FULL
+// ======================================================
+
+async function setStatus(
+    hordeId,
+    newStatus
+) {
+
+    if (!currentUser) {
+
+        alert("Please login first.");
+
+        return;
+
+    }
+
+
+    const {
+        error
+    } = await supabaseClient
+        .from("hordes")
+        .update({
+
+            status: newStatus,
+
+            owner_id:
+                currentUser.id
+
+        })
+        .eq(
+            "id",
+            hordeId
+        );
+
+
+    if (error) {
+
+        console.error(error);
+
+        alert(
+            "Could not update status: "
+            + error.message
+        );
+
+        return;
+
+    }
+
+
+    await loadHordes();
+
+}
+
+
+// ======================================================
+// LIKE / UNLIKE
+// ======================================================
+
+async function toggleLike(
+    hordeId
+) {
+
+    if (!currentUser) {
+
+        alert("Please login first.");
+
+        return;
+
+    }
+
+
+    const {
+        data: existing
+    } = await supabaseClient
+        .from("likes")
+        .select("id")
+        .eq(
+            "horde_id",
+            hordeId
+        )
+        .eq(
+            "user_id",
+            currentUser.id
+        )
+        .maybeSingle();
+
+
+    if (existing) {
+
+        await supabaseClient
+            .from("likes")
+            .delete()
+            .eq(
+                "id",
+                existing.id
+            );
+
+    } else {
+
+        await supabaseClient
+            .from("likes")
+            .insert({
+
+                horde_id:
+                    hordeId,
+
+                user_id:
+                    currentUser.id
+
+            });
+
+    }
+
+
+    await loadHordes();
+
+}
+
+
+// ======================================================
+// GET MY LIKES
+// ======================================================
+
+async function getMyLikes() {
+
+    if (!currentUser) {
+        return [];
+    }
+
+
+    const {
+        data
+    } = await supabaseClient
+        .from("likes")
+        .select("horde_id")
+        .eq(
+            "user_id",
+            currentUser.id
+        );
+
+
+    return (data || [])
+        .map(row => row.horde_id);
+
+}
+
+
+// ======================================================
+// ACTIVITY
+// ======================================================
+
+async function loadActivity() {
+
+    const {
+        data,
+        error
+    } = await supabaseClient
+        .from("activity")
+        .select(`
+            *,
+            profiles (
+                username
+            ),
+            hordes (
+                uid
+            )
+        `)
+        .order(
+            "created_at",
+            {
+                ascending: false
+            }
+        )
+        .limit(50);
+
+
+    if (error) {
+
+        console.error(error);
+
+        activityList.innerText =
+            "Could not load activity.";
+
+        return;
+
+    }
+
+
+    renderActivity(data || []);
+
+}
+
+
+function renderActivity(
+    activities
+) {
+
+    if (!activities.length) {
+
+        activityList.innerHTML =
+            "<p>No activity yet.</p>";
+
+        return;
+
+    }
+
+
+    activityList.innerHTML =
+        activities.map(item => {
+
+            const username =
+                item.profiles?.username ||
+                "Someone";
+
+
+            const uid =
+                item.hordes?.uid ||
+                "";
+
+
+            return `
+
+                <div class="activity-item">
+
+                    👤
+
+                    <b>
+                        ${escapeHTML(username)}
+                    </b>
+
+                    ${escapeHTML(item.action)}
+
+                    <b>
+                        ${escapeHTML(uid)}
+                    </b>
+
+                    <span class="activity-time">
+
+                        ${formatTime(
+                            item.created_at
+                        )}
+
+                    </span>
+
+                </div>
+
+            `;
+
+        }).join("");
+
+}
+
+
+// ======================================================
+// REALTIME
+// ======================================================
+
+let realtimeStarted = false;
+
+
+function subscribeToRealtime() {
+
+    if (realtimeStarted) {
+        return;
+    }
+
+    realtimeStarted = true;
+
+
+    // Horde changes
+
+    supabaseClient
+        .channel("hordes-live")
+
+        .on(
+            "postgres_changes",
+
+            {
+                event: "*",
+
+                schema: "public",
+
+                table: "hordes"
+
+            },
+
+            async () => {
+
+                await loadHordes();
+
+            }
+
+        )
+
+        .subscribe();
+
+
+    // Like changes
+
+    supabaseClient
+        .channel("likes-live")
+
+        .on(
+            "postgres_changes",
+
+            {
+                event: "*",
+
+                schema: "public",
+
+                table: "likes"
+
+            },
+
+            async () => {
+
+                await loadHordes();
+
+            }
+
+        )
+
+        .subscribe();
+
+
+    // Activity changes
+
+    supabaseClient
+        .channel("activity-live")
+
+        .on(
+            "postgres_changes",
+
+            {
+                event: "INSERT",
+
+                schema: "public",
+
+                table: "activity"
+
+            },
+
+            async () => {
+
+                await loadActivity();
+
+            }
+
+        )
+
+        .subscribe();
+
+}
+
+
+// ======================================================
+// SEARCH
+// ======================================================
+
+searchInput.addEventListener(
+    "input",
+    renderHordes
+);
+
+
+// ======================================================
+// FILTER BUTTONS
+// ======================================================
+
+document
+    .querySelectorAll(".filter")
+    .forEach(button => {
+
+        button.addEventListener(
+            "click",
+            async () => {
+
+                document
+                    .querySelectorAll(".filter")
+                    .forEach(btn =>
+                        btn.classList.remove(
+                            "active"
+                        )
+                    );
+
+
+                button.classList.add(
+                    "active"
+                );
+
+
+                currentFilter =
+                    button.dataset.filter;
+
+
+                await renderHordes();
+
+            }
+        );
+
+    });
+
+
+// ======================================================
+// CLAIM BUTTON
+// ======================================================
+
+document
+    .getElementById("claimButton")
+    .addEventListener(
+        "click",
+        () => {
+
+            alert(
+                "Claim system will be connected next."
+            );
+
+        }
+    );
+
+
+// ======================================================
+// HELPERS
+// ======================================================
+
+function escapeHTML(
+    text
+) {
+
+    const div =
+        document.createElement("div");
+
+    div.textContent =
+        text;
+
+    return div.innerHTML;
+
+}
+
+
+function formatTime(
+    timestamp
+) {
+
+    return new Date(
+        timestamp
+    ).toLocaleString();
+
+}
